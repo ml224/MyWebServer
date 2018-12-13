@@ -18,7 +18,7 @@ public class SocketClientTest {
 	public void testGetFromOnlineServer() throws Exception {
 		
 		SocketClient sut = new SocketClient(new Socket(), new HTTPGetProtocoll());
-		String actual = sut.get("194.47.172.159", 80, "/");
+		String actual = sut.get("localhost", 80, "/");
 		
 		String expected[] = new String[7];
 		expected[0] = "HTTP/1.1 200 OK\r\n";

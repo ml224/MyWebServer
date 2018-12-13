@@ -93,7 +93,7 @@ public class ConsoleViewTest {
 		
 		System.setOut(old);
 		
-		assertEquals(ConsoleView.PORT_IS_TAKEN+ "\n", outContent.toString());
+		assertEquals(ConsoleView.PORT_IS_TAKEN + System.getProperty("line.separator"), outContent.toString());
 	}
 	
 	@Test
